@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Tellekson's Projects</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Jordan Tellekson's Personal Portfolio!</div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html" tabindex="1">Home</a></li>
+                <li><a href="about.html" tabindex="2">About Me</a></li>
+                <li><a href="resume.html" tabindex="3">My Resume</a></li>
+                <li><a href="contact.html" tabindex="4">Contact Me!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="projects-section">
+        <div class="projects-container">
+            <h2>My Projects</h2>
+            <select id="filter-dropdown" tabindex="5">
+                <option value="all">All Projects</option>
+                <option value="game">Games</option>
+                <option value="website">Websites</option>
+            </select>
+            <div class="cards-container">
+                <div class="card" data-project="1" data-project-type="website">
+                    <img src="../images/travel1.png" alt="Travel Website Thumbnail">
+                    <h3>Travel Website</h3>
+                    <p>This was my first project I ever created. It is a fictitious travel website that includes some basic HTML, CSS, and JavaScript.</p>
+                    <button class="expand-button" data-project="1" tabindex="6">Expand Details</button>
+                </div>
+                <div class="card" data-project="2" data-project-type="game">
+                    <img src="../images/2048-1.png" alt="2048 Project Thumbnail">
+                    <h3>2048</h3>
+                    <p>This was the first game I ever created using JavaScript. It is a simple rendition of the game 2048.</p>
+                    <button class="expand-button" data-project="2" tabindex="7">Expand Details</button>
+                </div>
+                <div class="card" data-project="3" data-project-type="website">
+                    <img src="../images/portfolio1.png" alt="Personal Portfolio Thumbnail">
+                    <h3>Personal Portfolio</h3>
+                    <p>This seems awfully familiar! The website you are viewing right now is my first large-scale project!</p>
+                    <button class="expand-button" data-project="3" tabindex="8">Expand Details</button>
+                </div>
+            </div>
+            <button id="reset-button" style="display: none;" tabindex="9">Back to All Projects</button>
+        </div>
+    </section>    
+    <section id="timeline">
+        <div class="container">
+            <h2>My Journey & Projects Timeline</h2>
+            <div class="timeline-item-container">
+                <div class="timeline-item">
+                    <div class="timeline-date">August 2024</div>
+                    <div class="timeline-content">
+                        <h3>Started School</h3>
+                        <p>I began my studies in Software Development at Mid-State Technical College.</p>
+                    </div>
+                </div>
+                <div class="timeline-arrows">
+                    <span class="arrow-left" tabindex="10">&#8592;</span>
+                    <span class="arrow-right" tabindex="11">&#8594;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="info-section">
+        <div class="info-container">
+            <div class="info-item disclaimer">
+                <h3>*Disclaimer*</h3>
+                <p>
+                    These projects represent my initial work as a software development student. 
+                    I am continuously learning and creating more projects to enhance my skills.
+                </p>
+            </div>
+            <div class="info-item github">
+                <h3>Check Out More on GitHub</h3>
+                <div class="github-container">
+                    <a href="https://github.com/jordantellekson" target="_blank" class="github-link" tabindex="12">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+                        Visit My GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Jordan Tellekson | Looking Forward to Hear from You!</p>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/projects.js"></script>
+</body>
+</html>

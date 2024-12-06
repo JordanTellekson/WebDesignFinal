@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-section .hero-image {
+    background-image: url('../images/coding.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Hero content container (for text) */
+.hero-content-container {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    padding: 40px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 70%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-content-container:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Learn More Button */
+.cta-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #66b391;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Wrapper for dynamic intro */
+.intro-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Sliding overlay */
+#slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #73c8a9, #004d99);
+    z-index: 10;
+    cursor: pointer;
+    transition: width 0.3s ease;
+}
+
+/* Slider handle */
+#slider-handle {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 50px;
+    background: white;
+    cursor: ew-resize;
+    z-index: 11;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Add to the slider's CSS */
+#slider-overlay,
+#slider-handle {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Text inside the slider handle */
+#slider-handle .slider-text {
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Optionally, you can add a subtle text shadow for better visibility */
+#slider-handle .slider-text {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Intro Section */
+.intro-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.fun-facts {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.fact {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: transform 0.3s;
+}
+
+.fact:hover {
+    transform: scale(1.05);
+}
+
+/* Loading Screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #004d99;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    font-family: 'Poppins', sans-serif;
+}
+
+#loading-screen .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-top: 5px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

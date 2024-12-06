@@ -1,0 +1,168 @@
+body {
+    background: linear-gradient(135deg, #73c8a9, #004d99);
+    color: #fff;
+    padding: 0px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+li {
+    list-style: disc;
+    margin-left: 10px;
+}
+
+.resume-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.print {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.intro h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.resume-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #0066cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.skills, .skills-left, .skills-right, .print, .skills-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* print specific */
+@media print {
+    .navbar, button, footer {
+        display: none !important;
+    }
+
+    body {
+        background: #fff;
+        color: #000;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+    }
+
+    .resume {
+        padding: 0;
+    }
+
+    .resume-header {
+        margin: 0;
+        padding: 10px 20px;
+        border-bottom: 1px solid #000;
+    }
+
+    .profile-pic {
+        margin: 0;
+    }
+
+    .resume-header h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .resume-header p {
+        margin: 5px 0 10px;
+        font-size: 1.1rem;
+    }
+
+    .resume-content {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .description {
+        display: block;
+        padding: 10px 20px
+    }
+
+    section {
+        margin-bottom: 20px;
+        padding: 0;
+        background: none;
+        border: none;
+    }
+
+    @page {
+        size: auto;
+        margin: 0.2in 0.2in;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .resume-content {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .resume-header h1 {
+        font-size: 2.2rem;
+    }
+}

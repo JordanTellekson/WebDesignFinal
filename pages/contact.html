@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Jordan Tellekson</title>
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Jordan Tellekson's Personal Portfolio!</div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html" tabindex="1">Home</a></li>
+                <li><a href="about.html" tabindex="2">About Me</a></li>
+                <li><a href="projects.html" tabindex="3">My Projects</a></li>
+                <li><a href="resume.html" tabindex="4">My Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact-form-section">
+            <h1>Contact Me</h1>
+            <p>Reach out by filling out the form below! I'd love to hear from you.</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name (3-25 characters)" required tabindex="5">
+                    <small class="validation-feedback"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="youremail@example.com" required tabindex="6">
+                    <small class="validation-feedback"></small>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company <span class="required">*</span></label>
+                    <input type="text" id="company" name="company" placeholder="Company Name (N/A if you don't have one)" required tabindex="7">
+                    <small class="validation-feedback"></small>
+                </div>
+                <div class="form-group">
+                    <label for="date">Select a Date <span class="required">*</span></label>
+                    <input type="date" id="date" name="date" required tabindex="8">
+                    <small class="validation-feedback"></small>
+                </div>
+                <div class="form-group">
+                    <label>What qualities do you look for in candidates? <span class="required">*</span></label>
+                    <textarea id="qualities" name="qualities" required placeholder="Enter qualities you look for in candidates" tabindex="9"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Which technologies are most important for this role? <span class="required">*</span></label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="technologies" value="JavaScript" tabindex="10"> JavaScript</label>
+                        <label><input type="checkbox" name="technologies" value="Python" tabindex="11"> Python</label>
+                        <label><input type="checkbox" name="technologies" value="SQL" tabindex="12"> SQL</label>
+                        <label><input type="checkbox" name="technologies" value="General Knowledge" tabindex="13"> General Knowledge</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>How did you hear about me? <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="source" value="LinkedIn" required tabindex="14"> Social Media</label>
+                        <label><input type="radio" name="source" value="Website" required tabindex="15"> Employees</label>
+                        <label><input type="radio" name="source" value="Friend" required tabindex="16"> Friends</label>
+                        <label><input type="radio" name="source" value="Other" required tabindex="17"> Other</label>
+                    </div>
+                    <small class="validation-feedback"></small>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Additional Comments</label>
+                    <textarea id="comments" name="comments" tabindex="18"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn" tabindex="19">Submit</button>
+                    <button type="reset" class="reset-btn" tabindex="20">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Jordan Tellekson | Looking Forward to Hear from You!</p>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+#contact-form-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form-section h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#contact-form-section p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #050605;
+}
+
+#contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+/* Form group styles */
+.form-group {
+    flex: 1 1 calc(50% - 1rem); /* Split into two columns with some space */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #050605;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #020202;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+.checkbox-group label,
+.radio-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #080707;
+}
+
+.validation-feedback {
+    font-size: 0.9rem;
+    visibility: hidden;
+}
+
+.validation-feedback.error {
+    color: #f44336;
+}
+
+.validation-feedback.valid {
+    color: #4CAF50;
+}
+
+/* Buttons */
+.form-actions {
+    flex-basis: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.submit-btn,
+.reset-btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.reset-btn {
+    background-color: #f44336;
+}
+
+.reset-btn:hover {
+    background-color: #d73727;
+}
+
+/* Color contrast for feedback */
+#contact-form-section {
+    background: linear-gradient(to right, #d6d6d6, #378ce1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact-form {
+        flex-direction: column;
+    }
+
+    .form-group {
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+body {
+    background: linear-gradient(135deg, #73c8a9, #004d99);
+}
