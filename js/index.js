@@ -97,8 +97,8 @@ const stopDragging = () => {
                 sliderHandle.style.display = "none"; // Hide the slider handle
             }, 300); // Small delay for smooth transition
         } else {
-            // If not past 50%, close the overlay
-            sliderOverlay.style.width = "0";
+            // If not past 50%, leave overlay
+            sliderOverlay.style.width = "100";
         }
     }
 
